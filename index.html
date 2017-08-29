@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Perth Neighborhood Map</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>	
+		<div id="map"></div>
+		<div id="searchList">
+		<div id="searchInput">
+			<!--Search Box for searching location-->
+			<input id="search-box" placeholder="Search Here" data-bind="textInput: searchInput, valueUpdate: 'afterkeydown'">
+			</div>
+			<!--List for the Locations-->
+			<div id= listOfLocations>
+			<ul id="results" data-bind="foreach: refinedSearchList">
+				<li id="list" data-bind="click: showInfoWindow">
+					<h2 id="locationHeading" data-bind="text: title"></h2>
+					<strong>
+					<p id="location" data-bind="text: street"></p>
+					<p id="location" data-bind="text: city"></p> 
+					</strong>
+                </li>
+			</ul>
+			</div>
+		</div>
+		<!--Button to reset the screen-->
+		<input id= "resetZoom" type="button" value="Reset Zoom">
+
+	<script src='js/knockout-3.4.0.js'></script>
+	<script src='js/jquery-1.12.0.min.js'></script>
+	<!--Loads main.js Asynchronously-->
+	<script async src='js/main.js'></script>
+	<!--Loads Google Maps Asynchronously-->
+	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-rx-V4nS-zkxFN9_GyYVmcHYJVUEBW0M&callback=initMap&libraries=places" onerror="error()" ></script>
+</body>
+</html>

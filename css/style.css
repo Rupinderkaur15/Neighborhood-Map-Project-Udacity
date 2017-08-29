@@ -1,0 +1,130 @@
+
+body {
+	margin: 0;
+	font-family: "Times New Roman", Times, serif;
+	width: 100%;
+	height: 100%;
+}
+
+#search-box {
+	width: 19%;
+	height: 40px;
+	z-index: 3;
+	position: fixed;
+	border-radius: 15px;
+	margin-left: 10px;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 1.7em;
+}
+#search-box:focus {
+	background-color: pink;
+	border-width: 5px;
+	border-color: blue;
+	color: black;
+}
+
+#searchList {
+	background-color:  #002266;
+	position: absolute;
+	margin-left: 1%;
+	z-index: 2;
+	width: 22.5%;
+	height: 80%;
+	margin-top: 7%;
+	overflow: scroll;
+}
+#list:hover {
+	background-color: #1aff8c;
+	color : #800000;
+}
+#map {
+	background-color: #fff;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+
+#results {
+	margin-top: 30%;
+	padding: 0;
+	font-size: 1em;
+}
+
+#list {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    background-color: #99bbff;
+    color: white;
+    text-align: center;
+}
+
+#location {
+	font-size: 20px;
+	color: black;
+}
+
+#resetZoom {
+	position: absolute;
+	z-index: 2;
+	border-radius: 50%;
+	height: 05%;
+	margin-left: 01%;
+	margin-top: 03%;
+	background-color: blue;
+	color: white;
+}
+
+@media screen and (min-width: 401px) and (max-width : 900px) {
+
+	#search-box{
+		 width: 30%;
+		 height: 5%;
+		 font-size: 0.9em;
+		}
+	#searchList {
+		width: 40%;
+		margin-top: 10%;
+		font-size: 1em;
+	}
+	#listOfLocations{
+		margin-top: 60px;
+	}
+	h2 {
+	font-size: 1.5em;
+	}
+
+	p {
+		font-size: 0.5;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#search-box{
+		 width: 30%;
+		 height: 5%;
+		 font-size: 0.7em;
+		}
+	#searchList {
+		width: 35%;
+		margin-top: 30%;
+		margin-left: 5px;
+		font-size: 1em;
+	}
+
+	#location {
+		font-size: 45%;
+	}
+
+	h2 {
+		font-size: 0.7em;
+	}
+
+	p {
+		font-size: 0.5em;
+	}
+}
+
