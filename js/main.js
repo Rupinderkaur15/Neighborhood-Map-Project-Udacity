@@ -300,7 +300,7 @@ var markersDetails = [
             } else {
                 return ko.utils.arrayFilter(self.refineList(), function(searchItem) {
                     var searchstring = searchItem.title.toLowerCase();
-                    var results = (searchstring.search(refine) >= 0);
+                    var results = (searchstring.search(refine) > -1);
                     searchItem.visible(results);
                     return results;
                 });
