@@ -8,11 +8,11 @@ This is an interactive Neighbourhood map project.In this Project I have created 
 One can choose the location from the list or can enter the place in the provided search box they want to search on google maps.</br>
 I have used foursquare Api As my third party api to display some information for the place chosen by the user.
 Using Foursquare Api I have accessed the address of the location and Url of the location.
-Knockoutjs is used for tracking click events on the list items.
+Knockoutjs is used for tracking click events on the list items.A reset Zoom button is added to resize the map.
 
 <h4>How To Use</h4>
 1.Go to file:///C:/Users/rupin/Desktop/New%20Neighbourhood%20Map%20Project%20Udacity/index.html
-to see how it actually works.
+to see how it actually works.</br>
 2. You can also download the project from https://github.com/Rupinderkaur15/Neighborhood-Map-Project-Udacity
 and run index.html on your computer.
 
@@ -23,7 +23,8 @@ b-http://learn.knockoutjs.com/#/?tutorial=intro</br>
 c-http://knockoutjs.com/documentation/computedObservables.html</br>
 d-http://knockoutjs.com/documentation/click-binding.html</br>
 e-https://www.tutorialspoint.com/knockoutjs/</br>
-2.For the Ajax Request I saw few videos on youtube.And gone through</br>
+2.For the Ajax Request I saw few videos on youtube.And I have also gone through</br>
 a-https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started</br>
+b-<a href="https://classroom.udacity.com/courses/ud110">Intro To Ajax</a>
 
 I have also seen some of the answers from https://www.Stackoverflow.com .
