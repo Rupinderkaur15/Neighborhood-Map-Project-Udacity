@@ -265,8 +265,6 @@ var markersDetails = [
                 }, 3200);               
             });
 
-
-            //Data Binding using KnockoutJs
             this.showInfoWindow = function(locations){
                 google.maps.event.trigger(self.marker,'click');
             };
