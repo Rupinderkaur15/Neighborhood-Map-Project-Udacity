@@ -62,7 +62,7 @@ body {
     text-align: center;
 }
 
-#location {
+.location {
 	font-size: 20px;
 	color: black;
 }
@@ -70,10 +70,9 @@ body {
 #resetZoom {
 	position: absolute;
 	z-index: 2;
-	border-radius: 50%;
+	margin-left: 02%;
 	height: 05%;
-	margin-left: 01%;
-	margin-top: 03%;
+	margin-top: 03.5%;
 	background-color: blue;
 	color: white;
 }
@@ -115,7 +114,7 @@ body {
 		font-size: 1em;
 	}
 
-	#location {
+	.location {
 		font-size: 45%;
 	}
 
