@@ -12,27 +12,25 @@
 		<div id="searchInput">
 			<!--Search Box for searching location-->
 			<input id="search-box" placeholder="Search Here" data-bind="textInput: searchInput, valueUpdate: 'afterkeydown'">
-			</div>
+		</div>
 			<!--List for the Locations-->
 			<div id= listOfLocations>
 			<ul id="results" data-bind="foreach: refinedSearchList">
 				<li id="list" data-bind="click: showInfoWindow">
 					<h2 id="locationHeading" data-bind="text: title"></h2>
-					<strong>
-					<p id="location" data-bind="text: street"></p>
-					<p id="location" data-bind="text: city"></p> 
-					</strong>
+					<p class="location" data-bind="text: street"></p>
+					<p class="location" data-bind="text: city"></p> 
                 </li>
 			</ul>
 			</div>
 		</div>
 		<!--Button to reset the screen-->
-		<input id= "resetZoom" type="button" value="Reset Zoom">
+		<button id= "resetZoom" data-bind="click: resetMap">Reset Zoom</button>
 
 	<script src='js/knockout-3.4.0.js'></script>
 	<script src='js/jquery-1.12.0.min.js'></script>
-	<!--Loads main.js Asynchronously-->
-	<script async src='js/main.js'></script>
+	<!--Loads main.js Synchronously-->
+	<script src='js/main.js'></script>
 	<!--Loads Google Maps Asynchronously-->
 	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-rx-V4nS-zkxFN9_GyYVmcHYJVUEBW0M&callback=initMap&libraries=places" onerror="error()" ></script>
 </body>
